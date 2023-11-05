@@ -1,0 +1,10 @@
+Ibuprofen 2024-01-01 14
+Amoxicillin 2024-01-01 19
+Lisinopril 2024-01-01 11
+Aspirin 2024-01-01 18
+Loratadine 2024-01-01 16
+Metformin 2024-01-01 12
+Atorvastatin 2024-01-01 13
+Omeprazole 2024-01-01 17
+Sertraline 2024-01-01 15
+Acetaminophen 2024-01-01 20

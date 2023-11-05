@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.infirmary.Controllers.HomeController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="700.0" style="-fx-background-color: red;">
+         <children>
+            <Label alignment="CENTER" prefHeight="100.0" text="Infirmary" textFill="WHITE">
+               <font>
+                  <Font name="Consolas" size="56.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: rgb(255, 230, 230);">
+         <children>
+            <Button fx:id="btn_newTreatment" focusTraversable="false" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: red; -fx-background-radius: 7px; -fx-border-color: black; -fx-border-radius: 6px; -fx-border-width: 3px; -fx-background-insets: 0px 0px 1px 0px;" text="Add Treatment" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Consolas" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_viewTreatments" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: red; -fx-background-radius: 7px; -fx-background-insets: 0px 0px 1px 0px; -fx-border-color: black; -fx-border-width: 3px; -fx-border-radius: 6px;" text="View Treatments" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Consolas" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_inventory" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: red; -fx-background-insets: 0px 0px 1px 0px; -fx-background-radius: 7px; -fx-border-color: black; -fx-border-width: 3px; -fx-border-radius: 6px;" text="Inventory" textFill="WHITE">
+               <font>
+                  <Font name="Consolas" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</VBox>

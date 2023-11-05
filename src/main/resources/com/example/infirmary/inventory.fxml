@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: rgb(255, 230, 230);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.infirmary.Controllers.InventoryController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="700.0" style="-fx-background-color: red;">
+         <children>
+            <Button fx:id="btn_back" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-image: url(back.png); -fx-background-color: transparent;">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label prefHeight="100.0" text="Inventory" textFill="WHITE">
+               <font>
+                  <Font name="Consolas" size="56.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="141.0" />
+               </HBox.margin></Label>
+         </children>
+      </HBox>
+      <Pane prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <VBox fx:id="box_add" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="700.0">
+               <children>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="125.0" prefWidth="700.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="233.3">
+                           <children>
+                              <Label prefWidth="200.0" text="Medicine Name">
+                                 <font>
+                                    <Font name="Consolas" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txt_name" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="233.3">
+                           <children>
+                              <Label prefWidth="200.0" text="Expiry Date">
+                                 <font>
+                                    <Font name="Consolas" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txt_expiryDate" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="233.3">
+                           <children>
+                              <Label prefWidth="200.0" text="Stock">
+                                 <font>
+                                    <Font name="Consolas" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txt_stock" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin></HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btn_addMedication" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: red; -fx-background-radius: 7px; -fx-border-color: black; -fx-border-radius: 6px; -fx-border-width: 2.5px; -fx-background-insets: 0px 0px 1px 0px;" text="ADD" textFill="WHITE">
+                           <font>
+                              <Font name="Consolas" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="50.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btn_search" layoutX="328.0" layoutY="27.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: red; -fx-background-radius: 7px; -fx-border-color: black; -fx-border-radius: 6px; -fx-border-width: 2.5px; -fx-background-insets: 0px 0px 1px 0px;" text="SEARCH" textFill="WHITE">
+                           <font>
+                              <Font name="Consolas" size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <TableView fx:id="tbl_inventory" layoutY="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: rgb(255, 230, 230);" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
